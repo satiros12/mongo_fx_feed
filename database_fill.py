@@ -70,7 +70,7 @@ FX = SingletonDecorator(FX)
 
 def run(count=0):
     if count < 10:
-        threading.Timer(60.0, run, args=[count+1]).start()
+        threading.Timer(120.0, run, args=[count+1]).start()
         result = FX().get()
         if not result is None:
             DataDB().append(result)
