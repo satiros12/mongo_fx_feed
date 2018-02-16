@@ -1,1 +1,1 @@
-web: python3 database_fill.py
+worker: python3 database_fill.py
